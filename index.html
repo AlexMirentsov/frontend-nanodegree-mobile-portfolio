@@ -13,9 +13,7 @@
     	
     
 <style type="text/css">
-	header("Expires: ".gmdate("D, d M Y H:i:s", time()+86400*365)." GMT");
-	header("Cache-Control: max-age="+86400*365);
-
+	
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
@@ -29,7 +27,8 @@
 
     <script>
 	
-
+	@header("Expires: ".gmdate("D, d M Y H:i:s", time()+86400*365)." GMT");
+	@header("Cache-Control: max-age="+86400*365);
       (function(w,g){w['GoogleAnalyticsObject']=g;
       w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments)};w[g].l=1*new Date();})(window,'ga');
 
