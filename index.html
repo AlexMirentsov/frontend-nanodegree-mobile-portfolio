@@ -13,6 +13,8 @@
     	
     
 <style type="text/css">
+	header("Expires: ".gmdate("D, d M Y H:i:s", time()+86400*365)." GMT");
+	header("Cache-Control: max-age="+86400*365);
 
 @font-face {
   font-family: 'Open Sans';
@@ -26,6 +28,8 @@
     
 
     <script>
+	
+
       (function(w,g){w['GoogleAnalyticsObject']=g;
       w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments)};w[g].l=1*new Date();})(window,'ga');
 
@@ -34,7 +38,7 @@
       ga('send', 'pageview');
 
     </script>
-<script type="text/javascript">function(){var $c=function(a){this.w=a||[]};$c.prototype.set=function(a){this.w[a]=!0};$c.prototype.encode=function(){for(var a=[],b=0;b<this.w.length;b++)this.w[b]&&(a[Math.floor(b/6)]^=1<<b%6);for(b=0;b<a.length;b++)a[b]="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_".charAt(a[b]||0);return a.join("")+"~"};</script>
+<script src="js/analytics.js"></script>
     <script type="text/javascript">
 Content-Type: text/cache-manifest
 Cache-Control: max-age=0
@@ -46,7 +50,7 @@ function logCRP(){var t=window.performance.timing,dcl=t.domContentLoadedEventSta
   <body>
     <header  >
 	
-      <a href="/"><img Expires: Fri, 10 Feb 2017 16:06 GMT src="img/profilepic.jpg"></a>
+      <a href="/"><img  src="img/profilepic.jpg"></a>
       <p>Cameron Pittman<br><span>Course Developer</span></p>
     </header>
 
